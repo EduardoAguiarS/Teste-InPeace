@@ -1,0 +1,14 @@
+{
+  "name": "inPeace",
+  "version": "1.0.0",
+  "description": "Teste estagio front end",
+  "main": "index.js",
+  "author": "Eduardo Aguiar <edu.pessoal@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.54.7"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
