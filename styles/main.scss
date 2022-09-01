@@ -66,6 +66,10 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
 // Defaults:
+body {
+  height: 100vh;
+}
+
 button,
 input,
 textarea,
@@ -76,6 +80,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+// Buttons Style
 .button__primary {
   outline: none;
   border: none;
@@ -99,5 +109,24 @@ body {
 
   &:hover {
     background-color: darken($primary, 10%);
+  }
+}
+
+// Header
+.header {
+  display: block;
+  background: $primary;
+
+  padding: 1rem 0;
+
+  position: fixed;
+  z-index: 100;
+
+  width: 100%;
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 12rem;
   }
 }

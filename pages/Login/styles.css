@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 button,
 input,
 textarea,
@@ -17,6 +21,11 @@ body {
   font-weight: 400;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .button__primary {
@@ -33,8 +42,22 @@ body {
   line-height: 100%;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 }
 .button__primary:hover {
   background-color: #113a8d;
+}
+
+.header {
+  display: block;
+  background: #174DBA;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
 }/*# sourceMappingURL=styles.css.map */
