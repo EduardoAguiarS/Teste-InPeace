@@ -1,3 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button__primary {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #174DBA;
+  color: #EFF0F3;
+  width: 100%;
+  display: block;
+  padding: 0.875rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.button__primary:hover {
+  background-color: #113a8d;
 }/*# sourceMappingURL=styles.css.map */
