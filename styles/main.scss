@@ -52,6 +52,15 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: $gray;
 }
 
+@mixin content-dark-md {
+  font-family: $helvetica;
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1.4;
+
+  color: $dark;
+}
+
 // Reset:
 * {
   margin: 0;
@@ -131,5 +140,29 @@ img {
     display: block;
     margin: 0 auto;
     width: 12rem;
+  }
+}
+
+// Input
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+
+  @include content-primary-md;
+}
+
+input {
+  border: $primary solid 1px;
+  border-radius: 5px;
+  outline: none;
+
+  padding: 0.5em 0.625rem;
+
+  @include content-dark-md;
+
+  transition: outline 0.15s ease-in-out;
+
+  &:focus {
+    outline: $primary solid 1px;
   }
 }
