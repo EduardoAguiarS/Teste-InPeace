@@ -1,2 +1,77 @@
 // Import main styles
 @import "../../styles/main";
+
+.login__container {
+  // height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .login__form {
+    background: $white;
+
+    padding: 3rem 3rem;
+
+    border-radius: 6px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      @include title-md;
+    }
+
+    .flex__container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.2rem
+    }
+
+    .button {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .default__input {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        width: 300px;
+      }
+
+      label {
+        @include content-primary-md;
+        margin-bottom: 0.2rem
+      }
+
+      input {
+        @include content-dark-md;
+        padding: 0.5rem 1rem;
+        border: 1px solid $primary;
+        border-radius: 5px;
+
+        &:focus {
+          outline: 1px solid darken($primary, 10%);
+        }
+      }
+    }
+
+    .to__registration {
+      text-align: center;
+      margin-top: 1rem;
+      @include content-dark-md;
+
+      a {
+        @include content-primary-md;
+        text-decoration: none;
+      }
+    }
+  }
+}

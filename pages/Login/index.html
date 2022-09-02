@@ -10,9 +10,27 @@
 </head>
 
 <body>
-  <div>
-    <button class="button__primary">Cadastrar</button>
-  </div>
+  <main class="login__container">
+    <div class="login__form">
+      <h3>Acessar</h3>
+      <form>
+        <div class="flex__container default__input">
+          <label for="loginEmail">E-mail</label>
+          <input type="email" name="email" id="loginEmail">
+        </div>
+        <div class="flex__container default__input">
+          <label for="loginPass">Senha</label>
+          <input type="password" name="pass" id="loginPass">
+        </div>
+        <div class="button">
+          <button class="button__primary">Entrar</button>
+        </div>
+        <div class="to__registration">
+          <span>Já possui conta? <a href="#">Entre aqui</a></span>
+        </div>
+      </form>
+    </div>
+  </main>
 
   <script src="../../index.js"></script>
 </body>

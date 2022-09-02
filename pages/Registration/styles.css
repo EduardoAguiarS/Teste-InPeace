@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #d3d0d0;
+  background-color: #EFF0F3;
 }
 
 button,
@@ -134,7 +134,7 @@ img {
 .register__container .register__form .rule {
   margin-top: 0.3rem;
   font-size: 0.875rem;
-  color: #d3d0d0;
+  color: #cec7c7;
 }
 .register__container .register__form .button {
   display: block;
