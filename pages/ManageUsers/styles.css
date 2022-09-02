@@ -92,12 +92,19 @@ h1 {
 
 .content {
   display: none;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    text-align: start;
+  }
 }
 
 .user__container {
   display: flex;
   flex-wrap: wrap;
   gap: 3.2rem;
+  justify-content: center;
   padding: 2rem 0 3rem 0;
 }
 .user__container .user__card {
