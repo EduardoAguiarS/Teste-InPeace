@@ -1,5 +1,12 @@
 const userContainer = document.querySelector(".user__container");
 const container = document.querySelector(".container");
+const loading = document.querySelector(".loader__box");
+const content = document.querySelector(".content");
+
+window.addEventListener("load", function (event) {
+  content.style.display = "block";
+  loading.style.display = "none";
+});
 
 async function getUser() {
   try {
@@ -23,7 +30,7 @@ async function getUser() {
     view.innerHTML = `
       <span>mostrando ${response.per_page} de ${response.total}</span>
     `;
-    container.appendChild(view);
+    content.appendChild(view);
   } catch (err) {
     console.log(err);
   }
