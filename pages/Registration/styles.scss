@@ -1,2 +1,108 @@
 // Import main styles
 @import "../../styles/main";
+
+.register__container {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 3rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  .register__form {
+    background: $white;
+
+    padding: 2rem 3rem;
+
+    border-radius: 6px;
+
+    .inputs {
+      display: grid;
+      gap: 1.2rem;
+
+      @media screen and (min-width: 768px) {
+        grid: 70px / 1fr 1fr;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      @include title-md;
+    }
+
+    .flex__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .default__input {
+      label {
+        @include content-primary-md;
+        margin-bottom: 0.2rem
+      }
+
+      input {
+        @include content-dark-md;
+        padding: 0.5rem 1rem;
+        border: 1px solid $primary;
+        border-radius: 5px;
+
+        &:focus {
+          outline: 1px solid darken($primary, 10%);
+        }
+      }
+    }
+
+    .rule {
+      margin-top: 0.3rem;
+      font-size: 0.875rem;
+      color: $gray;
+    }
+
+    .button {
+      display: block;
+      margin: 2.5rem auto 1rem auto;
+
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+    }
+
+    .to__login {
+      text-align: center;
+      margin-top: 1rem;
+      @include content-dark-md;
+
+      a {
+        @include content-primary-md;
+        text-decoration: none;
+      }
+    }
+
+    select {
+      @include content-dark-md;
+      padding: 0.5rem 1rem;
+      border: 1px solid $primary;
+      border-radius: 5px;
+
+      &:focus {
+        outline: 1px solid darken($primary, 10%);
+      }
+    }
+
+    .radios {
+      display: flex;
+      gap: 1rem;
+
+      align-items: center;
+
+      height: 2.5rem;
+    }
+  }
+}

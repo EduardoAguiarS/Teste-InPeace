@@ -24,7 +24,6 @@ async function getUser() {
       <span>mostrando ${response.per_page} de ${response.total}</span>
     `;
     container.appendChild(view);
-    console.log(response);
   } catch (err) {
     console.log(err);
   }

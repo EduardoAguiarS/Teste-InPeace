@@ -1,6 +1,6 @@
 // Colors:
 $primary: #174DBA;
-$gray: #EFF0F3;
+$gray: #d3d0d0;
 $white: #FFFFFF;
 $dark: #505050;
 
@@ -101,7 +101,7 @@ img {
   border-radius: 5px;
 
   background-color: $primary;
-  color: $gray;
+  color: $white;
 
   width: 100%;
   display: block;
@@ -140,30 +140,6 @@ img {
     display: block;
     margin: 0 auto;
     width: 12rem;
-  }
-}
-
-// Input
-label {
-  display: block;
-  margin-bottom: 0.2rem;
-
-  @include content-primary-md;
-}
-
-input {
-  border: $primary solid 1px;
-  border-radius: 5px;
-  outline: none;
-
-  padding: 0.5em 0.625rem;
-
-  @include content-dark-md;
-
-  transition: outline 0.15s ease-in-out;
-
-  &:focus {
-    outline: $primary solid 1px;
   }
 }
 
