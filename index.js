@@ -49,7 +49,7 @@ function cadastro(event) {
 
   localStorage.setItem("users", JSON.stringify(localStorageUsers));
   alert("Cadastro realizado com sucesso!");
-  window.location.href = `${window.location.origin}/pages/Login/`;
+  window.location.pathname = `/pages/Login/`;
 }
 
 function login(event) {
@@ -73,6 +73,6 @@ function login(event) {
     return;
   }
 
-  alert("Login realizado com sucesso!");
-  window.location.href = `${window.location.origin}/pages/ManageUsers/`;
+  alert("Login realizado com sucesso!", window.location.hostm);
+  window.location.pathname = `/pages/ManageUsers/`;
 }
