@@ -1,2 +1,82 @@
 // Import main styles
 @import "../../styles/main";
+
+h1 {
+  margin-top: 7rem;
+
+  @include title-md;
+
+  @media screen and (min-width: 768px) {
+    @include title-lg;
+    margin-top: 7rem;
+  }
+}
+
+.user__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+
+  padding: 2rem 0 3rem 0;
+
+  .user__card {
+    background-color: $white;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem;
+    position: relative;
+
+    width: 380px;
+
+    .avatar {
+      width: 6rem;
+      height: 6rem;
+
+      border-radius: 50%;
+
+      margin-bottom: 0.875rem;
+    }
+
+    .user__name {
+      font-size: 1.2rem;
+      color: $primary;
+      margin-bottom: 1rem;
+    }
+
+    .user__mail {
+      @include content-dark-md;
+    }
+
+    .user__btn {
+      border: none;
+      outline: none;
+
+      background: none;
+
+      display: block;
+      height: 0;
+
+      width: 1.725rem;
+
+      position: absolute;
+
+      top: 1rem;
+      right: 1rem;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.view {
+  margin-bottom: 2rem;
+
+  text-align: end;
+
+  @include content-dark-md
+}

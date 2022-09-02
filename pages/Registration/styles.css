@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 button,
 input,
 textarea,
@@ -17,4 +21,71 @@ body {
   font-weight: 400;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.button__primary {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #174DBA;
+  color: #EFF0F3;
+  width: 100%;
+  display: block;
+  padding: 0.875rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.button__primary:hover {
+  background-color: #113a8d;
+}
+
+.header {
+  display: block;
+  background: #174DBA;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1.4;
+  color: #174DBA;
+}
+
+input {
+  border: #174DBA solid 1px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em 0.625rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1.4;
+  color: #505050;
+  transition: outline 0.15s ease-in-out;
+}
+input:focus {
+  outline: #174DBA solid 1px;
 }/*# sourceMappingURL=styles.css.map */

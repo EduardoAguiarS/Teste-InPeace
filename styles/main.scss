@@ -37,7 +37,7 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @mixin content-primary-md {
   font-family: $helvetica;
   font-size: 1rem;
-  font-weight: medium;
+  font-weight: bold;
   line-height: 1.4;
 
   color: $primary;
@@ -76,7 +76,7 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Defaults:
 body {
-  height: 100vh;
+  background-color: $gray;
 }
 
 button,
@@ -165,4 +165,12 @@ input {
   &:focus {
     outline: $primary solid 1px;
   }
+}
+
+// Container
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1rem;
 }

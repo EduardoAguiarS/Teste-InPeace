@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 100vh;
+  background-color: #EFF0F3;
 }
 
 button,
@@ -69,7 +69,7 @@ label {
   margin-bottom: 0.2rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: medium;
+  font-weight: bold;
   line-height: 1.4;
   color: #174DBA;
 }
@@ -88,4 +88,11 @@ input {
 }
 input:focus {
   outline: #174DBA solid 1px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1rem;
 }/*# sourceMappingURL=main.css.map */
